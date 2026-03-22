@@ -1,97 +1,98 @@
 :root {
-    --temp-color: #1f1f1f;
+  --temp-color: #1f1f1f;
 
-    --background-color: #efefef;
+  --background-color: #efefef;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+.temp-top-alignment {
+  height: 20px;
+  background-color: var(--temp-color);
+  color: var(--temp-color);
 }
 
 body {
-    .top-alignment {
-        height: 20px;
-        background-color: var(--temp-color);
-        color: var(--temp-color);
-    }
-
-    background-color: var(--background-color);
+  background-color: var(--background-color);
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #1876f2;
-    padding: 5px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1876f2;
+  padding: 5px 5%;
 }
 
 .logo {
-    width: 160px;
-    margin-right: 45px;
+  width: 160px;
+  margin-right: 45px;
 }
 
-.nav-left, .nav-right {
-    display: flex;
-    align-items: center;
+.nav-left,
+.nav-right {
+  display: flex;
+  align-items: center;
 }
 
 .nav-left ul li {
-    list-style: none;
-    display: inline-block;
+  list-style: none;
+  display: inline-block;
 }
 
 .nav-left ul li img {
-    width: 28px;
-    margin: 0 15px;
+  width: 28px;
+  margin: 0 15px;
 }
 
 .nav-user-icon img {
-    width: 40px;
-    border-radius: 50%;
-    cursor: pointer;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .nav-user-icon {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 
 .search-box {
-    background: #efefef;
-    width: 350px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    padding: 0 15px;
+  background: #efefef;
+  width: 350px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
 }
 
 .search-box img {
-    width: 18px;
+  width: 18px;
 }
 
 .search-box input {
-    width: 100%;
-    background: transparent;
-    padding: 10px;
-    outline: none;
-    border: 0;
+  width: 100%;
+  background: transparent;
+  padding: 10px;
+  outline: none;
+  border: 0;
 }
 
 .online {
-    position: relative;
+  position: relative;
 }
 
 .online::after {
-    content: '';
-    width: 7px;
-    height: 7px;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    background: #41db51;
-    position: absolute;
-    top: 0;
-    right: 0;
+  content: "";
+  width: 7px;
+  height: 7px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #41db51;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
