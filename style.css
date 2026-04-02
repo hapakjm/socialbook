@@ -11,6 +11,10 @@
   font-family: "poppins", sans-serif;
 }
 
+img {
+  display: block;
+}
+
 .temp-top-alignment {
   height: 20px;
   background-color: var(--temp-color);
@@ -35,12 +39,7 @@ nav {
   justify-content: space-between;
   background-color: #1876f2;
   padding: 5px 5%;
-  box-shadow:
-    0 1px 1px hsl(0deg 0% 0% / 0.075),
-    0 2px 2px hsl(0deg 0% 0% / 0.075),
-    0 4px 4px hsl(0deg 0% 0% / 0.075),
-    0 8px 8px hsl(0deg 0% 0% / 0.075),
-    0 16px 16px hsl(0deg 0% 0% / 0.075);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 20px;
   z-index: 100;
@@ -133,7 +132,16 @@ nav {
   position: sticky;
   top: 70px;
   align-self: flex-start;
-  height: 100vh;
+  background: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  color: #626262;
+  box-shadow:
+    0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075),
+    0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075),
+    0 16px 16px hsl(0deg 0% 0% / 0.075);
 }
 
 .main-content {
@@ -173,4 +181,95 @@ nav {
   margin: 25px 0;
   color: #626262;
   font-weight: 500;
+}
+
+.sidebar-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.sidebar-title h4 {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.sidebar-title a {
+  text-decoration: none;
+  color: #1876f2;
+  font-size: 12px;
+}
+
+.event {
+  display: flex;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.left-event {
+  border-radius: 10px;
+  height: 65px;
+  width: 65px;
+  margin-right: 15px;
+  padding-top: 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.event p {
+  font-size: 12px;
+}
+
+.event a {
+  font-size: 12;
+  text-decoration: none;
+  color: #1876f2;
+}
+
+.left-event span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1876f2;
+  color: #fff;
+  font-size: 10px;
+  padding: 4px 0;
+}
+
+.right-event {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar-ads {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.online-list {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.online-list img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.online-list .online {
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.online-list .online::after {
+  top: unset;
+  bottom: 0;
 }
