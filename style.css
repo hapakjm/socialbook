@@ -1,5 +1,5 @@
 :root {
-  --temp-color: #1f1f1f;
+  --temp-color: #0a0c10;
 
   --background-color: #efefef;
 }
@@ -15,6 +15,14 @@
   height: 20px;
   background-color: var(--temp-color);
   color: var(--temp-color);
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 101;
+}
+
+html {
+  scrollbar-width: none;
 }
 
 body {
@@ -27,6 +35,15 @@ nav {
   justify-content: space-between;
   background-color: #1876f2;
   padding: 5px 5%;
+  box-shadow:
+    0 1px 1px hsl(0deg 0% 0% / 0.075),
+    0 2px 2px hsl(0deg 0% 0% / 0.075),
+    0 4px 4px hsl(0deg 0% 0% / 0.075),
+    0 8px 8px hsl(0deg 0% 0% / 0.075),
+    0 16px 16px hsl(0deg 0% 0% / 0.075);
+  position: sticky;
+  top: 20px;
+  z-index: 100;
 }
 
 .logo {
@@ -95,4 +112,65 @@ nav {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 5%;
+}
+
+.left-sidebar {
+  flex-basis: 25%;
+  position: sticky;
+  top: 70px;
+  align-self: flex-start;
+  height: 100vh;
+}
+
+.right-sidebar {
+  flex-basis: 25%;
+  position: sticky;
+  top: 70px;
+  align-self: flex-start;
+  height: 100vh;
+}
+
+.main-content {
+  flex-basis: 47%;
+}
+
+.imp-links a,
+.shortcut-links a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  color: #626262;
+  width: fit-content;
+}
+
+.imp-links a img {
+  width: 25px;
+  margin-right: 15px;
+}
+
+.imp-links a:last-child {
+  color: #1876f2;
+}
+
+.imp-links {
+  border-bottom: 1px solid #ccc;
+}
+
+.shortcut-links a img {
+  width: 40px;
+  border-radius: 4px;
+  margin-right: 15px;
+}
+
+.shortcut-links p {
+  margin: 25px 0;
+  color: #626262;
+  font-weight: 500;
 }
